@@ -3,6 +3,7 @@
   "name": "tcmc",
   "displayName": "Twitch Controls My Code",
   "description": "Allows your viewers to write and delete code from your active file.",
+  "repository": "https://github.com/Niv3K-El-Pato/TwitchControlsMyCode",
   "version": "0.0.3",
   "engines": {
     "vscode": "^1.76.0"
