@@ -11,7 +11,8 @@ Your viewers will be able to control the opened document by typing the following
 * _Replace all occurences with a word:_ `!replaceAll const var`
 * _Replace line 32 with some text:_ `!replaceLine 32 this is the new line`
 * _Deletes a specific line:_ `!deleteLine 32`
-* _Removes all whitespace characters:_ `!minify`
 * _Moves cursor to line 2 character 5:_ `!moveTo 2 5`
 * _Creates a newline where the cursor is at:_ `!newline`
 * _quack:_ `!quack`
+
+## 🎥 Created while streaming > [Niv3k_El_Pato](https://twitch.tv/niv3k_el_pato)

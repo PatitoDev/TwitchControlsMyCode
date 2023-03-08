@@ -1,9 +1,8 @@
-import { ChatClient } from '@twurple/chat/lib';
 import * as vscode from 'vscode';
 import handlerMap from './handlerMap';
-import twitchClient from './TwitchClient';
+import TwitchClient from './TwitchClient';
 
-let client:ChatClient;
+let client:TwitchClient;
 
 export const activate = async (context: vscode.ExtensionContext) => {
 	console.log('Activated Extension');
@@ -25,10 +24,10 @@ export const activate = async (context: vscode.ExtensionContext) => {
 		}
 
 		if (client) {
-			client.quit();
+			client.close();
 		}
 
-		client = twitchClient.create(resp, async (type, content) => {
+		client = new TwitchClient(resp, async (type, content) => {
 			const handler = handlerMap[type];
 			if (handler) {
 				await handler(content);
@@ -43,5 +42,5 @@ export const activate = async (context: vscode.ExtensionContext) => {
 
 // This method is called when your extension is deactivated
 export function deactivate() {
-	client.quit();
+	client.close();
 }

@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { messageParser } from '../parsers/messageParser';
 
 export const onReplaceLineHandler = async (content: string) => {
     const args = content.split(' ');

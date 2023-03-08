@@ -12,7 +12,7 @@ const handlerMap: Record<Commands, (content: string) => Promise<void>> = {
     'write' : onWriteHandler,
     'replaceall': onReplaceHandler,
     'replaceline': onReplaceLineHandler,
-    'minify': onMinifyHandler,
+    //'minify': onMinifyHandler,
     'moveto': onMoveToLine,
     'newline': onNewLineHandler,
     'deleteline': onDeleteLine,

@@ -1,4 +1,4 @@
-const messageParser = {
+export const messageParser = {
     parse: (msg: string) => (
         msg
         .replace(/\\n/gm, '\n')

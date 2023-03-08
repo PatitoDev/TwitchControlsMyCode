@@ -3,7 +3,7 @@ export type Commands =
     'replaceall' | // 2 paremetros, word por word
     'replaceline' | // replace 3 asldkjasld asdjlkasd jlkasdj asldk
     'deleteline' | // delete 1
-    'minify' | // o quitar todos espacio
+    //'minify' | // o quitar todos espacio
     'moveto' | /// move window?,
     'newline' |
     'quack';  // ptoascii

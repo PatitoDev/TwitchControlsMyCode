@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { messageParser } from '../parsers/messageParser';
 
 export const onWriteHandler = async (content: string) => {
     const editor = vscode.window.activeTextEditor;
