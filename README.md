@@ -14,5 +14,3 @@ Your viewers will be able to control the opened document by typing the following
 * _Moves cursor to line 2 character 5:_ `!moveTo 2 5`
 * _Creates a newline where the cursor is at:_ `!newline`
 * _quack:_ `!quack`
-
-## 🎥 Created while streaming > [Niv3k_El_Pato](https://twitch.tv/niv3k_el_pato)
